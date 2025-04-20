@@ -1,6 +1,6 @@
 {
-  "name": "zuzia.base",
-  "version": "2.2.2",
+  "name": "@zuzia.dev/zuzia.base",
+  "version": "1.0.0",
   "description": "It is a Json based database module.",
   "main": "index.js",
   "scripts": {
@@ -31,8 +31,13 @@
     "data-manipulation"
   ],
   "author": "zuzia.dev",
-  "license": "Apache License 2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZuziaDev/zuzia.fetch"
+  },
+  "license": "MIT",
   "dependencies": {
+    "@zuzia.dev/zuzia.base": "file:",
     "axios": "^1.6.2",
     "bson": "^6.7.0",
     "child_process": "^1.0.2",
@@ -40,7 +45,6 @@
     "js-yaml": "^4.1.0",
     "moment": "^2.30.1",
     "mongodb": "^6.7.0",
-    "util": "^0.12.5",
-    "zuzia.base": "file:"
+    "util": "^0.12.5"
   }
 }

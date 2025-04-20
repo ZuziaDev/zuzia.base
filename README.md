@@ -7,7 +7,7 @@ Zuzia Base Database Module is a simple and versatile module to manage your data 
 First, install the module using npm:
 
 ```bash
-npm install zuzia.base
+npm install @zuzia.dev/zuzia.base
 ```
 
 ## Configuration
@@ -36,7 +36,7 @@ module.exports = {
 To use MongoDB, you need to have a MongoDB connection URI. You can get this from your MongoDB Atlas account or your own MongoDB server.
 
 ```javascript
-const MongoDB = require('zuzia.base');
+const MongoDB = require('@zuzia.dev/zuzia.base');
 
 const mongoDb = new MongoDB('your-mongodb-uri', 'your-database-name');
 await mongoDb.connect();
@@ -47,7 +47,7 @@ await mongoDb.connect();
 To use BSON, you need to specify the path to your BSON database file.
 
 ```javascript
-const BSONBase = require('zuzia.base');
+const BSONBase = require('@zuzia.dev/zuzia.base');
 
 const bsonDb = new BSONBase('test.bson');
 ```
@@ -57,7 +57,7 @@ const bsonDb = new BSONBase('test.bson');
 To use YAML, you need to specify the path to your YAML database file.
 
 ```javascript
-const YAMLBase = require('zuzia.base');
+const YAMLBase = require('@zuzia.dev/zuzia.base');
 
 const yamlDb = new YAMLBase('test.yaml');
 ```
@@ -71,7 +71,7 @@ You can use this module to interact with local JSON files, Firebase Realtime Dat
 ### Local JSON File Database
 
 ```javascript
-const { Database } = require('zuzia.base');
+const { Database } = require('@zuzia.dev/zuzia.base');
 
 const db = new Database('myDatabase.json');
 
@@ -89,7 +89,7 @@ db.remove('test.data');
 ### Firebase Realtime Database
 
 ```javascript
-const { Firebase } = require('zuzia.base');
+const { Firebase } = require('@zuzia.dev/zuzia.base');
 const config = require('./config');
 
 const firebaseDb = new Firebase(config.serviceAccountKey, config.databaseURL);
@@ -108,7 +108,7 @@ await firebaseDb.remove('test/data');
 ### MongoDB
 
 ```javascript
-const MongoDB = require('zuzia.base');
+const MongoDB = require('@zuzia.dev/zuzia.base');
 
 const mongoDb = new MongoDB('your-mongodb-uri', 'your-database-name');
 await mongoDb.connect();
@@ -129,7 +129,7 @@ await mongoDb.close();
 ### BSON
 
 ```javascript
-const BSONBase = require('zuzia.base');
+const BSONBase = require('@zuzia.dev/zuzia.base');
 
 const bsonDb = new BSONBase('test.bson');
 
@@ -147,7 +147,7 @@ bsonDb.remove('test.data');
 ### YAML
 
 ```javascript
-const YAMLBase = require('zuzia.base');
+const YAMLBase = require('@zuzia.dev/zuzia.base');
 
 const yamlDb = new YAMLBase('test.yaml');
 
@@ -277,4 +277,4 @@ Path)`: Creates a backup of the database to the specified file path.
 
 ## License
 
-This project is licensed under the Apache License 2.0.
+This project is licensed under the MIT.
