@@ -1,5 +1,5 @@
 {
-  "name": "@zuzia/base",
+  "name": "@zuziadev/base",
   "version": "1.0.0",
   "description": "It is a Json based database module.",
   "main": "index.js",
